@@ -1,6 +1,6 @@
 # Ayat Tech Solution Starter Project with Admin Dashboard
 
-A new Flutter project.
+A new Business Automation Tools.
 
 ## Getting Started
 
