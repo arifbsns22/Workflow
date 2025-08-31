@@ -78,7 +78,7 @@ class RouteBreadcrumbWidget extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 6),
                   child: GestureDetector(
-                    onTap: () => context.go('/dashboard/ecommerce-admin'),
+                    onTap: () => context.go('/dashboard/company-admin'),
                     child: MouseRegion(
                       cursor: SystemMouseCursors.click,
                       child: Icon(

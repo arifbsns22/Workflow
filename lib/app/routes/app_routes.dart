@@ -4,6 +4,8 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 // 🌎 Project imports:
+import '../pages/dashboard/pages/_company_admin_dashboard/_company_admin_dashboard.dart';
+import '../pages/dashboard/pages/_super_admin_dashboard/_super_admin_dashboard.dart';
 import '../pages/pages.dart';
 import '../providers/providers.dart';
 
@@ -27,7 +29,7 @@ abstract class AcnooAppRoutes {
           if (state.uri.queryParameters['rtl'] == 'true') {
             _appLangProvider.isRTL = true;
           }
-          return '/dashboard/ecommerce-admin';
+          return '/dashboard/company-admin';
         },
       ),
 
@@ -45,15 +47,15 @@ abstract class AcnooAppRoutes {
             path: '/dashboard',
             redirect: (context, state) async {
               if (state.fullPath == '/dashboard') {
-                return '/dashboard/ecommerce-admin';
+                return '/dashboard/company-admin';
               }
               return null;
             },
             routes: [
               GoRoute(
-                path: 'ecommerce-admin',
+                path: 'company-admin',
                 pageBuilder: (context, state) => const NoTransitionPage(
-                  child: ECommerceAdminDashboardView(),
+                  child: CompanyAdminDashboardView(),
                 ),
               ),
               GoRoute(
@@ -63,9 +65,9 @@ abstract class AcnooAppRoutes {
                 ),
               ),
               GoRoute(
-                path: 'erp-admin',
+                path: 'super-admin',
                 pageBuilder: (context, state) => const NoTransitionPage(
-                  child: ERPAdminDashboardView(),
+                  child: SuperAdminDashboardView(),
                 ),
               ),
               GoRoute(

@@ -10,8 +10,8 @@ import '../../../../widgets/widgets.dart';
 import '../../models/models.dart';
 import 'components/_components.dart' as comp;
 
-class ERPAdminDashboardView extends StatelessWidget {
-  const ERPAdminDashboardView({super.key});
+class SuperAdminDashboardView extends StatelessWidget {
+  const SuperAdminDashboardView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -101,11 +101,11 @@ class ERPAdminDashboardView extends StatelessWidget {
                             value: null,
                             enabled: false,
                             //child: Text('Status'),
-                            child: Text(lang.status),
+                            child: Text("Order Status"),
                           ),
                           ...[
                             //"All",
-                            lang.all,
+                            "All Orders",
                             //"Approved",
                             lang.approved,
                             //"Pending",
@@ -126,8 +126,8 @@ class ERPAdminDashboardView extends StatelessWidget {
                         itemBuilder: (ctx, idx) {
                           return comp.OrderListTile(
                             orderNumber: '#OID3548712',
-                            //orderTitle: 'Black T-Shirt For Man',
-                            orderTitle: lang.blackTShirtForMan,
+                            //orderTitle: 'Package 3',
+                            orderTitle: "Package 3",
                             orderDate:
                                 DateTime.now().subtract(Duration(days: idx)),
                             orderStatus: idx % 2 == 0
@@ -159,6 +159,7 @@ class ERPAdminDashboardView extends StatelessWidget {
                         16,
                         20,
                       ),
+
                       //headerText: 'Sales Ratio',
                       headerText: lang.salesRatio,
                       headerBackgroundColor:
@@ -216,44 +217,44 @@ List<OverviewItem> get _overviewItems => <OverviewItem>[
       ...[
         (
           "assets/images/widget_images/dashboard_overview_icon/edit_icon.png",
-          500,
-          //"Total Orders",
-          l.S.current.totalOrders,
+          58,
+          //"Total Users",
+          "Total Users",
           const Color(0xffAD00FF)
         ),
         (
           "assets/images/widget_images/dashboard_overview_icon/speech_to_text.png",
-          500,
-          //"Running Order",
-          l.S.current.runningOrder,
+          5,
+          //"Pending Users",
+          "Pending Users",
           const Color(0xff00AD66)
         ),
         (
           "assets/images/widget_images/dashboard_overview_icon/image_icon.png",
-          500,
-          // "Pending Order",
-          l.S.current.pendingOrder,
+          39,
+          // "Active Users",
+          "Active Users",
           const Color(0xff4429FF)
         ),
         (
           "assets/images/widget_images/dashboard_overview_icon/pdf_icon.png",
-          200,
-          //"Weekly Value",
-          l.S.current.weeklyValue,
+          2500,
+          //"Weekly Income",
+          "Weekly Income",
           const Color(0xffEE11E5)
         ),
         (
           "assets/images/widget_images/dashboard_overview_icon/code_icon.png",
-          170,
-          //"Monthly Value",
-          l.S.current.monthlyValue,
+          14500,
+          //"Monthly Income",
+          "Monthly Income",
           const Color(0xffFE6921)
         ),
         (
           "assets/images/widget_images/dashboard_overview_icon/voiceover_icon.png",
-          350,
-          //"Yearly Value",
-          l.S.current.yearlyValue,
+          65800,
+          //"Yearly Income",
+          "Yearly Income",
           const Color(0xff1570EF)
         ),
         (

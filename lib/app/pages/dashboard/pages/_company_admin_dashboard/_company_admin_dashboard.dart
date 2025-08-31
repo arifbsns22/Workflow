@@ -11,8 +11,8 @@ import '../../../../core/theme/theme.dart';
 import '../../../../widgets/widgets.dart';
 import 'components/_components.dart' as comp;
 
-class ECommerceAdminDashboardView extends StatelessWidget {
-  const ECommerceAdminDashboardView({super.key});
+class CompanyAdminDashboardView extends StatelessWidget {
+  const CompanyAdminDashboardView({super.key});
   @override
   Widget build(BuildContext context) {
     final _theme = Theme.of(context);

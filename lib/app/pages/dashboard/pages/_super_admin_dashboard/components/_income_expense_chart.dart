@@ -44,7 +44,7 @@ class IncomeExpenseLineChart extends StatelessWidget {
                     ),
                   ),
                   TextSpan(
-                    text: " \$10,000.00",
+                    text: "10,000.00৳",
                     style: TextStyle(
                       color: _isDark
                           ? _theme.colorScheme.onPrimaryContainer

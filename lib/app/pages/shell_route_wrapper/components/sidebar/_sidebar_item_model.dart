@@ -56,50 +56,50 @@ List<SidebarItemModel> get _topMenus {
       sidebarItemType: SidebarItemType.submenu,
       submenus: [
         SidebarSubmenuModel(
-          //name: ' eCommerce Admin',
-          name: l.S.current.eCommerceAdmin,
-          navigationPath: 'ecommerce-admin',
+          // name: 'Super Admin',
+          name: "Super Admin",
+          navigationPath: 'super-admin',
         ),
         SidebarSubmenuModel(
-          // name: 'Open AI Admin',
-          name: l.S.current.openAIAdmin,
-          navigationPath: 'open-ai-admin',
+          //name: 'Company Admin',
+          name: 'Company Admin',
+          navigationPath: 'company-admin',
         ),
-        SidebarSubmenuModel(
-          // name: 'ERP Admin',
-          name: l.S.current.eRPAdmin,
-          navigationPath: 'erp-admin',
-        ),
-        SidebarSubmenuModel(
-          //name: 'POS Admin',
-          name: l.S.current.pOSAdmin,
-          navigationPath: 'pos-admin',
-        ),
-        SidebarSubmenuModel(
-          //name: 'Earning Admin',
-          name: l.S.current.earningAdmin,
-          navigationPath: 'earning-admin',
-        ),
-        SidebarSubmenuModel(
-          //name: 'SMS Admin',
-          name: l.S.current.sMSAdmin,
-          navigationPath: 'sms-admin',
-        ),
-        SidebarSubmenuModel(
-          //name: 'Influencer Admin',
-          name: l.S.current.influencerAdmin,
-          navigationPath: 'influencer-admin',
-        ),
-        SidebarSubmenuModel(
-          // name: 'HRM Admin',
-          name: l.S.current.hRMAdmin,
-          navigationPath: 'hrm-admin',
-        ),
-        SidebarSubmenuModel(
-          // name: 'News Admin',
-          name: l.S.current.newsAdmin,
-          navigationPath: 'news-admin',
-        ),
+        // SidebarSubmenuModel(
+        //   // name: 'Open AI Admin',
+        //   name: l.S.current.openAIAdmin,
+        //   navigationPath: 'open-ai-admin',
+        // ),
+        // SidebarSubmenuModel(
+        //   //name: 'POS Admin',
+        //   name: l.S.current.pOSAdmin,
+        //   navigationPath: 'pos-admin',
+        // ),
+        // SidebarSubmenuModel(
+        //   //name: 'Earning Admin',
+        //   name: l.S.current.earningAdmin,
+        //   navigationPath: 'earning-admin',
+        // ),
+        // SidebarSubmenuModel(
+        //   //name: 'SMS Admin',
+        //   name: l.S.current.sMSAdmin,
+        //   navigationPath: 'sms-admin',
+        // ),
+        // SidebarSubmenuModel(
+        //   //name: 'Influencer Admin',
+        //   name: l.S.current.influencerAdmin,
+        //   navigationPath: 'influencer-admin',
+        // ),
+        // SidebarSubmenuModel(
+        //   // name: 'HRM Admin',
+        //   name: l.S.current.hRMAdmin,
+        //   navigationPath: 'hrm-admin',
+        // ),
+        // SidebarSubmenuModel(
+        //   // name: 'News Admin',
+        //   name: l.S.current.newsAdmin,
+        //   navigationPath: 'news-admin',
+        // ),
       ],
     ),
     SidebarItemModel(

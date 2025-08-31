@@ -29,7 +29,7 @@ Map<String, RouteBreadcrumbModel> get routerParam {
       //title: 'Dashboard',
       title: l.S.current.dashboard,
       parentRoute: 'Dashboard',
-      childRoute: 'ERP Admin',
+      childRoute: 'Super Admin',
     ),
     '/dashboard/pos-admin': RouteBreadcrumbModel(
       //title: 'Dashboard',
@@ -67,7 +67,7 @@ Map<String, RouteBreadcrumbModel> get routerParam {
       parentRoute: 'Dashboard',
       childRoute: 'News Admin',
     ),
-    '/dashboard/ecommerce-admin': RouteBreadcrumbModel(
+    '/dashboard/company-admin': RouteBreadcrumbModel(
       //title: 'Dashboard',
       title: l.S.current.dashboard,
       parentRoute: 'Dashboard',
